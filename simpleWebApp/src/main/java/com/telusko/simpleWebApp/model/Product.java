@@ -1,0 +1,37 @@
+package com.telusko.simpleWebApp.model;
+
+public class Product {
+
+    private int prodId;
+    private String prodname;
+    private int price;
+
+    public Product(int prodId, String prodname, int price) {
+        this.prodId = prodId;
+        this.prodname = prodname;
+        this.price = price;
+    }
+
+    public int getProdId() {
+        return prodId;
+    }
+    public void setProdId(int prodId) {
+        this.prodId = prodId;
+    }
+
+    public String getProdname() {
+        return prodname;
+    }
+
+    public void setProdname(String prodname) {
+        this.prodname = prodname;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+
+
+
+}
