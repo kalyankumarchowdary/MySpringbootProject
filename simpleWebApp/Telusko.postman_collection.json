@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "72290190-e6af-42cb-9473-0e43418edeac",
+		"name": "Telusko",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19795851",
+		"_collection_link": "https://interstellar-shadow-421173.postman.co/workspace/MyWorkspace~c3278959-4ff5-4df7-9d3a-1091981a5817/collection/19795851-72290190-e6af-42cb-9473-0e43418edeac?action=share&source=collection_link&creator=19795851"
+	},
+	"item": [
+		{
+			"name": "MySpringBootProject",
+			"item": [
+				{
+					"name": "simpleWebApp",
+					"item": [
+						{
+							"name": "h2-console( for h2 db)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/h2-console",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"h2-console"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"prodId\": 1,\r\n    \"prodname\": \"Laptop\",\r\n    \"price\": 30000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "MySpringBootProject"
+		}
+	]
+}
