@@ -1,5 +1,6 @@
 package com.telusko.simpleWebApp.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
@@ -9,8 +10,11 @@ import org.springframework.stereotype.Component;
 public class Product {
 
     @Id
+    @Schema (description = "Unique identifier of the Product.", example = "101", required = true)
     private int prodId;
+    @Schema (description = "Name of the Product.", example = "Laptop", required = true)
     private String prodname;
+    @Schema (description = "Price of the Product.", example = "1500", required = true)
     private int price;
 
     public Product() {
